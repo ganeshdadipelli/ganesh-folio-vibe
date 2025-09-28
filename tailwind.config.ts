@@ -14,54 +14,68 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        // Portfolio Theme Colors
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "secondary-bg": "hsl(var(--secondary-bg))",
+        "card-bg": "hsl(var(--card-bg))",
+        "text-secondary": "hsl(var(--text-secondary))",
+        "border-color": "hsl(var(--border-color))",
+        
+        // Component Colors
+        "nav-active": "hsl(var(--nav-active))",
+        "nav-active-text": "hsl(var(--nav-active-text))",
+        "button-primary": "hsl(var(--button-primary))",
+        "button-primary-text": "hsl(var(--button-primary-text))",
+        
+        // Original shadcn colors for compatibility
+        border: "hsl(var(--border-color))",
+        input: "hsl(var(--border-color))",
+        ring: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(var(--button-primary))",
+          foreground: "hsl(var(--button-primary-text))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(var(--secondary-bg))",
+          foreground: "hsl(var(--foreground))",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "0 84.2% 60.2%",
+          foreground: "hsl(var(--foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(var(--card-bg))",
+          foreground: "hsl(var(--text-secondary))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "hsl(var(--card-bg))",
+          foreground: "hsl(var(--foreground))",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "hsl(var(--card-bg))",
+          foreground: "hsl(var(--foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+          DEFAULT: "hsl(var(--card-bg))",
+          foreground: "hsl(var(--foreground))",
         },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-card': 'var(--gradient-card)',
+        'gradient-hover': 'var(--gradient-hover)',
+      },
+      boxShadow: {
+        'card': 'var(--shadow-card)',
+        'glow': 'var(--shadow-glow)',
       },
       keyframes: {
         "accordion-down": {
